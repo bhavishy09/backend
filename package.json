@@ -4,6 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
+    "start": "node ./script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/bhavishy09/backend/issues"
   },
-  "homepage": "https://github.com/bhavishy09/backend#readme"
+  "homepage": "https://github.com/bhavishy09/backend#readme",
+  "dependencies": {
+    "accessibility": "^6.1.0",
+    "express": "^5.1.0",
+    "one-liner-joke": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
