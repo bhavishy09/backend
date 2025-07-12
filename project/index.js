@@ -15,11 +15,19 @@ app.get("/",function(req,res)
     fs.readdir(`./files`,function(err,files)
     {
        
-        res.render("index",{files:files});
+        res.render('index',{files:files});
     })
     
 })
 
+app.get("/files/:filename",function(req,res)
+{
+    fs.readFile(`./files/${req.params.filename}`,"utf-8",function(err,filedata){
+        res.render("show",{files: req.params.filename,filedata:filedata})
+    })
+    
+    
+})
 
 app.post("/create",function(req,res)
 {
@@ -36,4 +44,4 @@ app.post("/create",function(req,res)
 
 
 
-app.listen(3008);
+// app.listen(3008);

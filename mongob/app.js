@@ -40,9 +40,9 @@ app.get("/read",  async (req, res) => {
 
 //delete
 app.get("/delete",  async (req, res) => {
-  let users= await usermodel.findOneAndDelete({username:"bhavishya"});
+  let userss= await usermodel.findOneAndDelete({username:"bhavishya"});
   
-  res.send(users);
+  res.send(userss);
 })
 
 app.listen(3003);
