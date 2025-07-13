@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-screen bg-gradient-to-br from-zinc-900 to-black flex items-center justify-center">
+
+    <form method="post" action="/login" class="bg-zinc-800 p-8 rounded-xl shadow-2xl w-full max-w-md space-y-6">
+      <h2 class="text-3xl font-bold text-center text-white mb-4">🏋️‍♂️ Join FitZone</h2>
+      <p class="text-center text-zinc-400 mb-6 text-sm">Unlock your fitness journey. Register now!</p>
+  
+  
+      
+  
+
+      <div>
+        <input 
+          class="w-full px-4 py-3 rounded-lg bg-zinc-700 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+          type="email" name="email" placeholder="email" required>
+      </div>
+  
+     
+      <div>
+        <input 
+          class="w-full px-4 py-3 rounded-lg bg-zinc-700 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+          type="password" name="password" placeholder="Password" required>
+      </div>
+  
+     
+   
+
+      <div>
+        <input 
+          class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg cursor-pointer transition"
+          type="submit" value="login">
+      </div>
+  
+      
+    </form>
+  
+  </body>
+</html>
